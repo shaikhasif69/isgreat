@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+       
+
+   
+
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open form.html",
+            "url": "http://localhost:8080",
+            "file": "c:\\Users\\ADMIN\\Downloads\\Shaikh Aif files\\Study Material\\the actual\\dashmin-1.0.0\\form.html"
+        }
+    ]
+}
