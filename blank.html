@@ -54,8 +54,8 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">Mit</h6>
+                        <span>Manager</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -182,85 +182,72 @@
 
             <!-- Blank Start -->
             <div class="container-fluid pt-3 px-3">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Rejected Respones Section</h6>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Sr.</th>
-                                            <th scope="col">Rephrased Query</th>
-                                            <th scope="col">Influencer</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>21-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>22-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>23-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>24-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>25-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>26-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Rephrased quesry will be displayed here:)</td>
-                                            <td>Sai Bhilare</td>
-                                            <td>27-03-2022</td>
-                                            <td style="color: red;">Rejected</td>
-                                            <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                    </div>
+                
+            <!-- Form Start -->
+            <div class="container-fluid pt-1 px-1">
+                <div class="bg-light rounded-top p-4">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <!--as the manager click on reply button all the information of influencer will be pre written on this page-->
+                  <label for="inputEmail4" class="form-label"> Name</label>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder=" Kush ">
                 </div>
-            </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label" >Influencer Id</label>
+                 
+                  <input type="text" class="form-control" id="inputPassword4" placeholder="8295107223">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">G-mail</label>
+                    <label class="visually-hidden" for="autoSizingInputGroup"></label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="email" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Select Campaign </label>
+                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                <div class="col-12">
+                    <label for="exampleFormControlTextarea1">Write the issue in brief</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileMultiple" class="form-label">Upload a file if any</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+                
+                </div>
+                <div class="container-fluid pt-2 padding_leftRight">
+                    <div class="bg-light rounded-top p-3">
+                        <div class="col-md-12 bg-light text-right place_it_right container">
+                <div class="col-14 col-sm-6 text Right text-sm-start ">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Read all the details before you click submit 
+                    </label>
+                  </div>
+                </div>
+                <!-- <div class="col-12"> -->
+                   
+                   
+                   
+                   
+      
+                  <button type="submit" class="btn btn-primary  float-right " >Submit</button></div>
+
+               
+              </form>
+              </div>
+              </div>
             <!-- Blank End -->
 
 

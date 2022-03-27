@@ -54,8 +54,8 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">Mit</h6>
+                        <span>Manager</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -68,7 +68,7 @@
                             <a href="element.html" class="dropdown-item">Tickets History</a>
                         </div>
                     </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Tickets Rejected</a>
                     <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
@@ -103,62 +103,33 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                            <span class="d-none d-lg-inline-flex">Notification</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <!-- so basically i added a fucntion here where in admin can remove the notification if he wants(just for fun if he wants :) )-->
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-1 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
+                                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                    <i class="fa fa-exclamation-circle me-2"></i>Kush Raised a ticket
+                                    <small>15 minutes ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
+                                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                    <i class="fa fa-exclamation-circle me-2"></i>Meherin Raised a ticket
+                                    <small>6 hours ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
+                                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                    <i class="fa fa-exclamation-circle me-2"></i>Mit Rejected the respone
+                                    <small>Yesterday</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item text-center">See all notifications</a>
@@ -192,59 +163,59 @@
                             <thead>
                                 <tr class="text-dark">
                                     <th scope="col">Sr.</th>
-                                    <th scope="col">Subject</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Influencer</th>
-                                    <th scope="col">Campaign names</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Campaign Name</th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Assosiated Influencer</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Enquiry will be raised here</td>
-                                    <td>26-03-2022</td>
-                                    <td>Kush</td>
-                                    <td>Campaign name</td>
-                                    <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
+                                    <td>Nothing matters!</td>
+                                    <td>ravla</td>
+                                    <td>25-03-2022</td>
+                                    <td>25-03-2022</td>
+                                    <td>Atharva</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">View Details</a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Enquiry will be raised here</td>
-                                    <td>26-03-2022</td>
-                                    <td>Sai</td>
-                                    <td>Campaign name</td>
-                                    <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
+                                    <td>Nothing matters!</td>
+                                    <td>ravla</td>
+                                    <td>25-03-2022</td>
+                                    <td>25-03-2022</td>
+                                    <td>Atharva</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">View Details </a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Enquiry will be raised here</td>
-                                    <td>26-03-2022</td>
+                                    <td>Nothing matters!</td>
+                                    <td>ravla</td>
+                                    <td>25-03-2022</td>
+                                    <td>25-03-2022</td>
                                     <td>Atharva</td>
-                                    <td>Campaign name</td>
-                                    <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="signin.html">Reply</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="signin.html">View Details</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Enquiry will be raised here</td>
-                                    <td>26-03-2022</td>
-                                    <td>Meherin</td>
-                                    <td>Campaign name</td>
-                                    <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
+                                    <td>Nothing matters!</td>
+                                    <td>ravla</td>
+                                    <td>25-03-2022</td>
+                                    <td>25-03-2022</td>
+                                    <td>Atharva</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">View Details</a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Enquiry will be raised here</td>
-                                    <td>26-03-2022</td>
-                                    <td>Shaikh Asif</td>
-                                    <td>Campaign name</td>
-                                    <td>Pending</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Reply</a></td>
+                                    <td>Nothing matters!</td>
+                                    <td>ravla</td>
+                                    <td>25-03-2022</td>
+                                    <td>25-03-2022</td>
+                                    <td>Atharva</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">View Details</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -258,13 +229,9 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="#">TCE</a>, All Right Reserved. 
                         </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
+                        
                 </div>
             </div>
             <!-- Footer End -->
