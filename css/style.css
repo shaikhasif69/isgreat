@@ -174,7 +174,7 @@
 }
 
 .content .navbar .navbar-nav .nav-link {
-    margin-left: 25px;
+    margin-left: 35px;
     padding: 12px 0;
     color: var(--dark);
     outline: none;
@@ -194,6 +194,9 @@
     justify-content: center;
     background: #FFFFFF;
     border-radius: 40px;
+}
+.navbar-nav{
+    margin: -5px;
 }
 
 .content .navbar .dropdown-toggle::after {
