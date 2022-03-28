@@ -29,6 +29,7 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
+    
     <body>
 
             <!-- Blank Start -->
@@ -39,9 +40,10 @@
                     <div class="bg-light rounded-top p-4">
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <!--as the manager click on reply button all the information of influencer will be pre written on this page-->
-                      <label for="inputEmail4" class="form-label"> Name</label>
-                      <input type="text" class="form-control" id="inputEmail4" placeholder=" Kush ">
+                        <div style="padding-bottom: 18px;font-size : 24px;">Report An Issue</div>
+                             <div style="padding-bottom: 18px;">Reported by<span style="color: red;"> *</span><br/>
+                            <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+                        </div>
                     </div>
                     <div class="col-md-6">
                       <label for="inputPassword4" class="form-label" >Influencer Id</label>
@@ -68,6 +70,12 @@
                         
                     </div>
                     <div class="col-md-6">
+                        <div style="padding-bottom: 18px;">Priority<br/>
+                            <select id="data_4" name="data_4" style="max-width : 300px;" class="form-control"><option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                            </select>
+                        </div>
                         <div id="wrapperDiv">
                         <!--here will be the files what influencer has attached so manager can choose what files to be downloaded-->
                         <div class="accordion-item" style="padding:10px;float:left">
